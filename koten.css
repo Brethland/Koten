@@ -1,0 +1,86 @@
+:root {
+    --background-color: white;
+    --font-color: #161515;
+    --font-size: 16px;
+    --h1-fontsize: 2rem;
+    --h2-fontsize: 1.375rem;
+    --h3-fontsize: 1.25rem;
+    --h4-fontsize: 1.125rem;
+}
+ 
+html {
+    font-size: var(--font-size);
+    background-color: var(--background-color);
+}
+ 
+html,
+body {  
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+ 
+#write {
+    /* size of writing area: */
+    padding-left: 10ch;
+    padding-right: 10ch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: var(--h1-fontsize);
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: var(--h2-fontsize);
+}
+
+h3 {
+    font-size: var(--h3-fontsize);
+}
+
+h4 {
+    font-size: var(--h4-fontsize);
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+    color: #424242;
+}
+
+blockquote {
+    padding-left: 2ch;
+    margin-left: 1ch;
+    position: relative;
+    overflow: hidden;
+    border-left: 1.5px solid gray;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+p {
+    letter-spacing: 0.4px;
+    font-kerning: normal;
+    line-break: strict;
+    line-height: 150%;
+    word-spacing: 1px;
+}
+
+a {
+    color: #424242;
+    text-decoration: underline;
+}
+ 
+img {
+    max-width: 80%;
+}
