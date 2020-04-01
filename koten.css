@@ -3,7 +3,8 @@
     --header-font: 'Oswald', sans-serif;
     --code-font: 'Iosevka', Courier, monospace;
     --background-color: white;
-    --font-color: #161515;
+    --border-color: gray;
+    --accent-color: grey;
     --font-size: 16px;
     --h1-fontsize: 2rem;
     --h2-fontsize: 1.375rem;
@@ -55,6 +56,14 @@ body {
     padding-right: 22ch;
 }
 
+pre.md-meta-block {
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    font-family: var(--code-font);
+    padding-bottom: .5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--header-font);
     font-weight: bold;
@@ -63,12 +72,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     text-align: center;
+    text-transform: uppercase;
     font-size: var(--h1-fontsize);
 }
 
 h2 {
     text-align: center;
     text-decoration: underline;
+    text-transform: uppercase;
     font-size: var(--h2-fontsize);
 }
 
@@ -94,12 +105,12 @@ blockquote {
     margin-left: 1ch;
     position: relative;
     overflow: hidden;
-    border-left: 1.5px solid gray;
-    color: grey;
+    border-left: 1.5px solid var(--border-color);
+    color: var(--accent-color);
     font-family: 'EB Garamond', serif;
     text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-fon-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-fon-smoothing: grayscale;
 }
 
 blockquote p::first-letter {
@@ -116,10 +127,12 @@ p {
 }
 
 a {
-    color: #424242;
-    text-decoration: underline;
+    color: var(--accent-color);
 }
  
 img {
     max-width: 80%;
+    padding: .8ch;
+    /* display: block; */
+    border: 3px double var(--border-color);
 }
