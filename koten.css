@@ -1,4 +1,7 @@
 :root {
+    --body-font: Georgia, Times, 'Times New Roman', serif;
+    --header-font: 'Oswald', sans-serif;
+    --code-font: 'Iosevka', Courier, monospace;
     --background-color: white;
     --font-color: #161515;
     --font-size: 16px;
@@ -7,7 +10,34 @@
     --h3-fontsize: 1.25rem;
     --h4-fontsize: 1.125rem;
 }
- 
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: bold;
+    src: local(Oswald Bold), url("./fonts/Oswald-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Iosevka';
+    font-weight: normal;
+    font-style: normal;
+    src: local(Iosevka), url("./fonts/Iosevka/Iosevka.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Iosevka';
+    font-weight: bold;
+    font-style: normal;
+    src: local(Iosevka Bold), url("./fonts/Iosevka/Iosevka-Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Iosevka';
+    font-style: italic;
+    src: local(Iosevka Italic), url("./fonts/Iosevka/Iosevka-Italic.ttf") format('truetype');
+}
+
 html {
     font-size: var(--font-size);
     background-color: var(--background-color);
@@ -15,17 +45,18 @@ html {
  
 html,
 body {  
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--body-font);
     text-align: justify;
 }
  
 #write {
     /* size of writing area: */
-    padding-left: 10ch;
-    padding-right: 10ch;
+    padding-left: 22ch;
+    padding-right: 22ch;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
     font-weight: bold;
     color: black;
 }
@@ -65,15 +96,23 @@ blockquote {
     overflow: hidden;
     border-left: 1.5px solid gray;
     color: grey;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'EB Garamond', serif;
+    text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-fon-smoothing: grayscale;
 }
- 
+
+blockquote p::first-letter {
+    float: left;
+    font-size: larger;
+}
+
 p {
-    letter-spacing: 0.4px;
+    /* letter-spacing: 0.2px; */
     font-kerning: normal;
-    line-break: strict;
+    line-break: normal;
     line-height: 150%;
-    word-spacing: 1px;
+    /* word-spacing: 0.4px; */
 }
 
 a {
