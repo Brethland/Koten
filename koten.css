@@ -2,7 +2,8 @@
     --body-font: Georgia, Times, 'Times New Roman', serif;
     --header-font: 'Oswald', sans-serif;
     --code-font: 'Iosevka', Courier, monospace;
-    --background-color: white;
+    --code-background-color: #eaeaea;
+    --background-color: #fafafa;
     --border-color: gray;
     --accent-color: grey;
     --font-size: 16px;
@@ -56,12 +57,38 @@ body {
     padding-right: 22ch;
 }
 
-pre.md-meta-block {
-    background-color: var(--background-color);
-    color: var(--accent-color);
+pre {
     font-family: var(--code-font);
+    margin-left: 1.2em;
+}
+
+pre.md-meta-block {
+    background-color: var(--code-background-color);
+    color: var(--accent-color);
     padding-bottom: .5rem;
     border-bottom: 2px solid var(--border-color);
+}
+
+table {
+    padding: .8ch;
+    border: 3px double var(--border-color);
+}
+
+thead {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+tr, td, th {
+    padding: .4ch;
+}
+
+tr {
+    border: .5px solid var(--border-color);
+}
+
+.md-table-edit {
+    color: var(--accent-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -124,6 +151,10 @@ p {
     line-break: normal;
     line-height: 150%;
     /* word-spacing: 0.4px; */
+}
+
+code {
+    font-family: var(--code-font);
 }
 
 a {
