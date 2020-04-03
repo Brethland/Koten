@@ -1,13 +1,9 @@
 @import url('./meta.css');
 
-pre {
-    font-family: var(--code-font);
-    margin-left: 1.2em;
-}
-
 pre.md-meta-block {
     background-color: var(--code-background-color);
     color: var(--accent-color);
+    font-family: var(--code-font);
     padding-bottom: .5rem;
     border-bottom: 2px solid var(--border-color);
 }
@@ -32,6 +28,37 @@ tr {
 
 .md-table-edit {
     color: var(--accent-color);
+}
+
+ol, ul {
+    list-style-position: outside;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+li {
+    line-height: 1.2;
+}
+
+hr {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double var(--border-color);
+    color: var(--border-color);
+    text-align: center;
+}
+
+hr::after {
+    content: "𝄞";
+    display: inline-block;
+    position: relative;
+    top: -0.75em;
+    font-size: 1.4em;
+    padding: 0 0.2em;
+    background-color: var(--background-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
