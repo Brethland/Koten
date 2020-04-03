@@ -1,0 +1,16 @@
+@import url('./meta.css');
+
+code {
+    font-family: var(--code-font);
+}
+
+a {
+    color: var(--accent-color);
+}
+ 
+img {
+    max-width: 80%;
+    padding: .8ch;
+    /* display: block; */
+    border: 3px double var(--border-color);
+}

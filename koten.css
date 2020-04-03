@@ -1,44 +1,6 @@
-:root {
-    --body-font: Georgia, Times, 'Times New Roman', serif;
-    --header-font: 'Oswald', sans-serif;
-    --code-font: 'Iosevka', Courier, monospace;
-    --code-background-color: #eaeaea;
-    --background-color: #fafafa;
-    --border-color: gray;
-    --accent-color: grey;
-    --font-size: 16px;
-    --h1-fontsize: 2rem;
-    --h2-fontsize: 1.375rem;
-    --h3-fontsize: 1.25rem;
-    --h4-fontsize: 1.125rem;
-}
-
-@font-face {
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: bold;
-    src: local(Oswald Bold), url("./fonts/Oswald-Bold.ttf");
-}
-
-@font-face {
-    font-family: 'Iosevka';
-    font-weight: normal;
-    font-style: normal;
-    src: local(Iosevka), url("./fonts/Iosevka/Iosevka.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: 'Iosevka';
-    font-weight: bold;
-    font-style: normal;
-    src: local(Iosevka Bold), url("./fonts/Iosevka/Iosevka-Bold.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: 'Iosevka';
-    font-style: italic;
-    src: local(Iosevka Italic), url("./fonts/Iosevka/Iosevka-Italic.ttf") format('truetype');
-}
+@import url('./src/meta.css');
+@import url('./src/inline.css');
+@import url('./src/block.css');
 
 html {
     font-size: var(--font-size);
@@ -50,120 +12,9 @@ body {
     font-family: var(--body-font);
     text-align: justify;
 }
- 
+
 #write {
     /* size of writing area: */
     padding-left: 22ch;
     padding-right: 22ch;
-}
-
-pre {
-    font-family: var(--code-font);
-    margin-left: 1.2em;
-}
-
-pre.md-meta-block {
-    background-color: var(--code-background-color);
-    color: var(--accent-color);
-    padding-bottom: .5rem;
-    border-bottom: 2px solid var(--border-color);
-}
-
-table {
-    padding: .8ch;
-    border: 3px double var(--border-color);
-}
-
-thead {
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-tr, td, th {
-    padding: .4ch;
-}
-
-tr {
-    border: .5px solid var(--border-color);
-}
-
-.md-table-edit {
-    color: var(--accent-color);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--header-font);
-    font-weight: bold;
-    color: black;
-}
-
-h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: var(--h1-fontsize);
-}
-
-h2 {
-    text-align: center;
-    text-decoration: underline;
-    text-transform: uppercase;
-    font-size: var(--h2-fontsize);
-}
-
-h3 {
-    font-size: var(--h3-fontsize);
-}
-
-h4 {
-    font-size: var(--h4-fontsize);
-}
-
-h5 {
-    font-size: 1rem;
-}
-
-h6 {
-    font-size: 1rem;
-    color: #424242;
-}
-
-blockquote {
-    padding-left: 2ch;
-    margin-left: 1ch;
-    position: relative;
-    overflow: hidden;
-    border-left: 1.5px solid var(--border-color);
-    color: var(--accent-color);
-    font-family: 'EB Garamond', serif;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-fon-smoothing: grayscale;
-}
-
-blockquote p::first-letter {
-    float: left;
-    font-size: larger;
-}
-
-p {
-    /* letter-spacing: 0.2px; */
-    font-kerning: normal;
-    line-break: normal;
-    line-height: 150%;
-    /* word-spacing: 0.4px; */
-}
-
-code {
-    font-family: var(--code-font);
-}
-
-a {
-    color: var(--accent-color);
-}
- 
-img {
-    max-width: 80%;
-    padding: .8ch;
-    /* display: block; */
-    border: 3px double var(--border-color);
 }

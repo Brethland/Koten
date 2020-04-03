@@ -1,0 +1,97 @@
+@import url('./meta.css');
+
+pre {
+    font-family: var(--code-font);
+    margin-left: 1.2em;
+}
+
+pre.md-meta-block {
+    background-color: var(--code-background-color);
+    color: var(--accent-color);
+    padding-bottom: .5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+table {
+    padding: .8ch;
+    border: 3px double var(--border-color);
+}
+
+thead {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+tr, td, th {
+    padding: .4ch;
+}
+
+tr {
+    border: .5px solid var(--border-color);
+}
+
+.md-table-edit {
+    color: var(--accent-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
+    font-weight: bold;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--h1-fontsize);
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: var(--h2-fontsize);
+}
+
+h3 {
+    font-size: var(--h3-fontsize);
+}
+
+h4 {
+    font-size: var(--h4-fontsize);
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+    color: #424242;
+}
+
+blockquote {
+    padding-left: 2ch;
+    margin-left: 1ch;
+    position: relative;
+    overflow: hidden;
+    border-left: 1.5px solid var(--border-color);
+    color: var(--accent-color);
+    font-family: 'EB Garamond', serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-fon-smoothing: grayscale;
+}
+
+blockquote p::first-letter {
+    float: left;
+    font-size: larger;
+}
+
+p {
+    /* letter-spacing: 0.2px; */
+    font-kerning: normal;
+    line-break: normal;
+    line-height: 150%;
+    /* word-spacing: 0.4px; */
+}
