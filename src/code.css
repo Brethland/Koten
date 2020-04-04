@@ -41,3 +41,31 @@
 .md-fences .code-tooltip {
     background-color: white;
 }
+
+#typora-source {
+    font-family: var(--code-font);
+}
+
+#typora-source .cm-header {
+    color: #303F9F;
+}
+
+#typora-source .cm-strong {
+    color: #303F9F;
+}
+
+#typora-source .cm-em {
+    color: #303F9F;
+}
+
+#typora-source .cm-link {
+    color: #E64A19; 
+}
+
+#typora-source .cm-string {
+    color: #689F38;
+}
+
+#typora-source .cm-comment {
+    color: var(--accent-color);
+}

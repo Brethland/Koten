@@ -1,7 +1,20 @@
 @import url('./meta.css');
 
+strong, em {
+    font-variant-ligatures: normal;
+}
+
+mark {
+    background-color: yellowgreen;
+}
+ 
+del {
+    color: var(--accent-color);
+}
+
 code {
     font-family: var(--code-font);
+    padding: 0 0.1rem;
 }
 
 a {
