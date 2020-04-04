@@ -1,6 +1,7 @@
 @import url('./src/meta.css');
 @import url('./src/inline.css');
 @import url('./src/block.css');
+@import url('./src/code.css');
 
 html {
     font-size: var(--font-size);
