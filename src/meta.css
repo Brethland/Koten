@@ -17,25 +17,25 @@
     font-family: 'Oswald';
     font-style: normal;
     font-weight: bold;
-    src: local(Oswald Bold), url("./fonts/Oswald-Bold.ttf");
+    src: local(Oswald Bold), url("../fonts/Oswald-Bold.ttf");
 }
 
 @font-face {
     font-family: 'Iosevka';
     font-weight: normal;
     font-style: normal;
-    src: local(Iosevka), url("./fonts/Iosevka/Iosevka.ttf") format('truetype');
+    src: local(Iosevka), url("../fonts/Iosevka/Iosevka.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'Iosevka';
     font-weight: bold;
     font-style: normal;
-    src: local(Iosevka Bold), url("./fonts/Iosevka/Iosevka-Bold.ttf") format('truetype');
+    src: local(Iosevka Bold), url("../fonts/Iosevka/Iosevka-Bold.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'Iosevka';
     font-style: italic;
-    src: local(Iosevka Italic), url("./fonts/Iosevka/Iosevka-Italic.ttf") format('truetype');
+    src: local(Iosevka Italic), url("../fonts/Iosevka/Iosevka-Italic.ttf") format('truetype');
 }
