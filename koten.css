@@ -4,19 +4,4 @@
 @import url('./src/code.css');
 @import url('./src/ui.css');
 
-html {
-    font-size: var(--font-size);
-    background-color: var(--background-color);
-}
- 
-html,
-body {  
-    font-family: var(--body-font);
-    text-align: justify;
-}
-
-#write {
-    /* size of writing area: */
-    padding-left: 22ch;
-    padding-right: 22ch;
-}
+/* Adding your personal style here. */
