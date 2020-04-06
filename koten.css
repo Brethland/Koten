@@ -2,6 +2,7 @@
 @import url('./src/inline.css');
 @import url('./src/block.css');
 @import url('./src/code.css');
+@import url('./src/ui.css');
 
 html {
     font-size: var(--font-size);
