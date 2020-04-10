@@ -60,11 +60,6 @@
     height: 100%;
 }
 
-.btn:hover,
-.btn .btn-default:hover {
-    background-color: var(--code-background-color);
-}
-
 #outline-dropmenu {
     /* TODO: More Design needed. */
     font-family: var(--code-font);
