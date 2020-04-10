@@ -2,10 +2,6 @@
     --body-font: Georgia, Times, 'Times New Roman', serif;
     --header-font: 'Oswald', sans-serif;
     --code-font: 'Iosevka', Courier, monospace;
-    --code-background-color: #fafafa;
-    --background-color: white;
-    --border-color: gray;
-    --accent-color: grey;
     --font-size: 16px;
     --h1-fontsize: 2rem;
     --h2-fontsize: 1.375rem;
@@ -42,9 +38,8 @@
 
 html {
     font-size: var(--font-size);
-    background-color: var(--background-color);
 }
- 
+
 html,
 body {  
     font-family: var(--body-font);

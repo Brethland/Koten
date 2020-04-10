@@ -1,0 +1,56 @@
+:root {
+    --code-background-color: #fafafa;
+    --background-color: white;
+    --border-color: gray;
+    --accent-color: grey;
+}
+
+html { background-color: var(--background-color); }
+
+pre.md-meta-block {
+    background-color: var(--code-background-color);
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--border-color);
+}
+
+table { border: 3px double var(--border-color); }
+tr { border: .5px solid var(--border-color); }
+
+.md-table-edit { color: var(--accent-color); }
+
+hr {
+    border-top: medium double var(--border-color);
+    color: var(--border-color);
+}
+hr::after { background-color: var(--background-color); }
+
+h1, h2, h3, h4, h5 { color: black; }
+h6 { color: #424242; }
+
+blockquote {
+    border-left: 1.5px solid var(--border-color);
+    color: var(--accent-color);
+}
+
+mark { background-color: yellowgreen; }
+
+del { color: var(--accent-color); }
+
+a { color: var(--accent-color); }
+
+img { border: 3px double var(--border-color); }
+
+#write div.md-toc-tooltip { background-color: var(--background-color); }
+
+.modal-content { border: 2px double var(--border-color); }
+
+.btn:hover:before,
+.btn .btn-default:hover:before {
+    border-top-color: var(--border-color);
+    border-left-color: var(--border-color);
+}
+.btn:hover:after,
+.btn .btn-default:hover:after {
+    border-bottom-color: var(--border-color);
+    border-right-color: var(--border-color);
+}

@@ -1,29 +1,13 @@
 @import url('./meta.css');
 
-strong, em {
-    font-variant-ligatures: normal;
-}
-
-mark {
-    background-color: yellowgreen;
-}
- 
-del {
-    color: var(--accent-color);
-}
+strong, em { font-variant-ligatures: normal; }
 
 code {
     font-family: var(--code-font);
     padding: 0 0.1rem;
 }
-
-a {
-    color: var(--accent-color);
-}
  
 img {
     max-width: 80%;
     padding: .8ch;
-    /* display: block; */
-    border: 3px double var(--border-color);
 }

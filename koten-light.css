@@ -1,7 +1,9 @@
 @import url('./src/meta.css');
 @import url('./src/inline.css');
 @import url('./src/block.css');
-@import url('./src/code.css');
 @import url('./src/ui.css');
+
+@import url('./src/scheme/code_light.css');
+@import url("./src/scheme/light.css");
 
 /* Adding your personal style here. */
