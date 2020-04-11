@@ -1,0 +1,63 @@
+:root {
+    --code-background-color: #464b5d;
+    --background-color: #121212;
+    --border-color: #eaeaea;
+    --accent-color: rgba(255,255,255,0.6);
+    --font-color: rgba(255,255,255,0.87);
+}
+
+html { 
+    background-color: var(--background-color); 
+}
+
+#write {
+    color: var(--font-color);
+}
+
+pre.md-meta-block {
+    background-color: var(--code-background-color);
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--border-color);
+}
+
+table { border: 3px double var(--border-color); }
+tr { border: .5px solid var(--border-color); }
+
+.md-table-edit { color: var(--accent-color); }
+
+hr {
+    border-top: medium double var(--border-color);
+    color: var(--border-color);
+}
+hr::after { background-color: var(--background-color); }
+
+h1, h2, h3, h4, h5 { color: #bb86fc; }
+h6 { color: #b39ddB; }
+
+blockquote {
+    border-left: 1.5px solid var(--border-color);
+    color: var(--accent-color);
+}
+
+mark { background-color: #b8b80a; }
+
+del { color: var(--accent-color); }
+
+a { color: var(--accent-color); }
+
+img { border: 3px double var(--border-color); }
+
+#write div.md-toc-tooltip { background-color: var(--background-color); }
+
+.modal-content { border: 2px double var(--border-color); }
+
+.btn:hover:before,
+.btn .btn-default:hover:before {
+    border-top-color: var(--border-color);
+    border-left-color: var(--border-color);
+}
+.btn:hover:after,
+.btn .btn-default:hover:after {
+    border-bottom-color: var(--border-color);
+    border-right-color: var(--border-color);
+}
