@@ -10,6 +10,10 @@ html {
     background-color: var(--background-color); 
 }
 
+html, body {
+    color: var(--font-color);
+}
+
 #write {
     color: var(--font-color);
 }
@@ -47,9 +51,16 @@ a { color: var(--accent-color); }
 
 img { border: 3px double var(--border-color); }
 
-#write div.md-toc-tooltip { background-color: var(--background-color); }
+sup.md-footnote {
+    background-color: var(--code-background-color);
+    color: var(--font-color);
+}
 
-.modal-content { border: 2px double var(--border-color); }
+#write div.md-toc-tooltip { background-color: var(--background-color); }
+ 
+.typora-sourceview-on #toggle-sourceview-btn {
+    background-color: var(--background-color);
+}
 
 .btn:hover:before,
 .btn .btn-default:hover:before {
@@ -60,4 +71,11 @@ img { border: 3px double var(--border-color); }
 .btn .btn-default:hover:after {
     border-bottom-color: var(--border-color);
     border-right-color: var(--border-color);
+}
+
+.context-menu {
+    background-color: var(--background-color);
+}
+.context-menu.dropdown-menu .divider {
+    background-color: #232629;
 }
