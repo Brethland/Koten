@@ -1,5 +1,5 @@
 :root {
-    --body-font: Georgia, Times, 'Times New Roman', serif;
+    --body-font: 'Alegreya', Georgia, serif;
     --header-font: 'Oswald', sans-serif;
     --code-font: 'Iosevka', Courier, monospace;
     --font-size: 16px;
@@ -14,6 +14,26 @@
     font-style: normal;
     font-weight: bold;
     src: local(Oswald Bold), url("../fonts/Oswald-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    font-weight: normal;
+    font-style: normal;
+    src: local(Alegreya Regular) url("../fonts/Alegreya-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    font-weight: bold;
+    font-style: normal;
+    src: local(Alegreya Bold) url("../fonts/Alegreya-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    font-style: italic;
+    src: local(Alegreya Italic) url("../fonts/Alegreya-Italic.ttf");
 }
 
 @font-face {
