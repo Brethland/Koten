@@ -76,6 +76,38 @@ sup.md-footnote {
 .context-menu {
     background-color: var(--background-color);
 }
+
 .context-menu.dropdown-menu .divider {
     background-color: #232629;
+}
+
+#typora-quick-open .typora-quick-open-item {
+    background: var(--background-color);
+}
+
+#typora-quick-open .typora-quick-open-item:hover {
+    background: #212121;
+}
+
+#typora-sidebar {
+    background: var(--background-color);
+}
+
+#typora-sidebar #outline-content .outline-item:hover {
+    background: #212121;
+}
+
+#typora-sidebar .file-tree-node.file-library-file-node:hover .file-node-background,
+#typora-sidebar .file-list-item.file-library-node:hover {
+  background: #212121;
+}
+
+#megamenu-content {
+    background: var(--background-color);
+    color: var(--font-color);
+}
+  
+#megamenu-menu-sidebar {
+    background-color: var(--background-color);
+    color: var(--font-color);
 }

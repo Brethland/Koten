@@ -10,8 +10,7 @@ The name comes from Japanese Romaji, which means "古典(こてん)". I wish thi
  Plans:
 
 - [x] Koten Light
-- [ ] Koten Dark
-- [ ] Koten Classical, a theme supports to write vertically
+- [x] Koten Dark
 
 ## Usage
 

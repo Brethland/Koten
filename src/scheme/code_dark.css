@@ -1,42 +1,46 @@
 @import url('../meta.css');
 
-/* Material Design code fences.
-    Author: Brethland  */
+/* Minium code fences.
+    Author: Brethland  
+    Some ideas comes from Dolch theme in VS Code. */
 
 .cm-s-inner {
-    background-color: #fafafa;
+    background-color: #202020;
     color: rgba(255,255,255,0.87);
 }
-.cm-s-inner .CodeMirror-gutters { background: #fafafa; }
-.cm-s-inner .CodeMirror-guttermarker, .cm-s-inner .CodeMirror-guttermarker-subtle, .cm-s-inner .CodeMirror-linenumber { color: #018786; }
-.cm-s-inner .cm-keyword { color: #6200EE; }
-.cm-s-inner .cm-operator { color: #6200EE; }
-.cm-s-inner .cm-builtin { color: #3700B3; }
-.cm-s-inner .cm-atom { color: #E64A19; }
-.cm-s-inner .cm-number { color: #E64A19; }
-.cm-s-inner .cm-tag { color: #E64A19; }
-.cm-s-inner .cm-string { color: #689F38; }
-.cm-s-inner .cm-comment { color: grey; }
-.cm-s-inner .cm-meta { color: #03DAC6; }
-.cm-s-inner .cm-attribute { color: #018786; }
-.cm-s-inner .cm-property { color: #303F9F; }
-.cm-s-inner .cm-qualifier { color: #DECB6B; }
-.cm-s-inner .cm-error { color: #B00020; }
+.cm-s-inner .CodeMirror-gutters { background: #202020; }
+.cm-s-inner .CodeMirror-guttermarker, .cm-s-inner .CodeMirror-guttermarker-subtle, .cm-s-inner .CodeMirror-linenumber { color: #66d9ef; }
+.cm-s-inner .cm-keyword { color: white; }
+.cm-s-inner .cm-operator { color: #66d9ef; }
+.cm-s-inner .cm-builtin { color: rgba(255,255,255,0.87); }
+.cm-s-inner span.cm-variable, .cm-s-inner span.cm-variable-2, .cm-s-inner span.cm-variable-3 { color: rgba(255,255,255,0.87); }
+.cm-s-inner span.cm-def { color: rgba(255,255,255,0.87); }
+.cm-s-inner span.cm-type { color: white; }
+.cm-s-inner .cm-atom { color: rgba(255,255,255,0.87); }
+.cm-s-inner .cm-number { color: #66d9ef; }
+.cm-s-inner .cm-tag { color: rgba(255,255,255,0.6); }
+.cm-s-inner .cm-string { color: #50fa7b; }
+.cm-s-inner .cm-comment { color: gray; }
+.cm-s-inner .cm-meta { color: #50fa7b; }
+.cm-s-inner .cm-attribute { color: rgba(255,255,255,0.87); }
+.cm-s-inner .cm-property { color: rgba(255,255,255,0.87); }
+.cm-s-inner .cm-qualifier { color: #50fa7b; }
+/* .cm-s-inner .cm-error { color: #B00020; } */
 .cm-s-inner .CodeMirror-matchingbracket {
     text-decoration: underline;
-    color: black !important;
+    color: white !important;
 }
 
 .md-fences {
-    background-color: white;
-    color: #424242;
+    background-color: #121212;
+    color: rgba(255,255,255,0.87);
 }
-.md-fences .code-tooltip { background-color: white; }
+.md-fences .code-tooltip { background-color: #121212; }
 
 #typora-source { font-family: var(--code-font); }
-#typora-source .cm-header { color: #303F9F; }
-#typora-source .cm-strong { color: #6200EE; }
-#typora-source .cm-em { color: #6200EE; }
-#typora-source .cm-link { color: #E64A19; }
-#typora-source .cm-string { color: #689F38; }
-#typora-source .cm-comment { color: grey; }
+#typora-source .cm-header { color: #bd93f9; }
+#typora-source .cm-strong { color: #66d9ef; }
+#typora-source .cm-em { color: #66d9ef; }
+#typora-source .cm-link { color: #50fa7b; }
+#typora-source .cm-string { color: #50fa7b; }
+#typora-source .cm-comment { color: gray; }
